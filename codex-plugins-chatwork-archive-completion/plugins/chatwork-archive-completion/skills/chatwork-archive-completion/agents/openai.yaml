@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chatworkアーカイブ完了管理"
+  short_description: "ChatworkルームやCWアーカイブ行から分析、Drive格納、完了更新まで行う"
+  default_prompt: "CWアーカイブシートの行またはChatworkルームをもとに分析レポートを作成し、Driveに格納して完了管理シートの該当行をTRUEにしてください。"
