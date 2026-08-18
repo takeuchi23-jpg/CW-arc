@@ -1,0 +1,20 @@
+{
+  "name": "chatwork-archive-completion",
+  "version": "0.1.0",
+  "description": "Create Chatwork archive knowledge reports, upload them to Drive, and mark the matching CW archive sheet row complete.",
+  "author": {
+    "name": "Hiroto Takeuchi"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Chatworkアーカイブ完了管理",
+    "shortDescription": "Chatworkアーカイブの分析、Drive格納、完了更新をまとめて実行します。",
+    "longDescription": "Chatwork room logs or CW archive sheet rows are processed into internal-knowledge Markdown reports, uploaded to the approved Google Drive folder, and verified against the matching spreadsheet row before setting completion to TRUE.",
+    "developerName": "Hiroto Takeuchi",
+    "category": "Productivity",
+    "capabilities": [
+      "Skills"
+    ],
+    "defaultPrompt": "CWアーカイブシートの行またはChatworkルームをもとに分析レポートを作成し、Driveに格納して完了管理シートの該当行をTRUEにしてください。"
+  }
+}

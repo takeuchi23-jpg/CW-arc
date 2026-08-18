@@ -1,4 +1,4 @@
-# CW-arc# Hiroto Codex Plugins
+# CW-arc
 
 Codex用のローカルPlugin配布リポジトリです。
 
@@ -10,21 +10,78 @@ Chatworkアーカイブログから社内ナレッジ用Markdownレポートを�
 
 ## 使う側のインストール手順
 
-このリポジトリをcloneします。
+### コマンドを実行する画面の開き方
+
+Mac、Windows、Linuxのどれでも利用できます。自分の環境に合わせてコマンドを実行する画面を開いてください。
+
+Macの場合:
+
+1. `command + space`を押してSpotlight検索を開く
+2. `ターミナル` と入力する
+3. `Terminal` または `ターミナル` を選んでEnterを押す
+
+Windowsの場合:
+
+1. スタートメニューを開く
+2. `PowerShell` と入力する
+3. `Windows PowerShell` または `PowerShell` を開く
+
+Linuxの場合:
+
+1. アプリ一覧から `Terminal` を開く
+2. Ubuntuなら `Ctrl + Alt + T` でも開けます
+
+画面が開いたら、下の3行をまとめてコピーして貼り付け、Enterを押します。
+
+Mac / Linux:
 
 ```bash
-git clone https://github.com/YOUR_ACCOUNT/codex-plugins-chatwork-archive-completion.git ~/codex-plugins-chatwork-archive-completion
+git clone https://github.com/takeuchi23-jpg/CW-arc.git ~/CW-arc
+codex plugin marketplace add ~/CW-arc
+codex plugin add chatwork-archive-completion@hiroto
+```
+
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/takeuchi23-jpg/CW-arc.git $HOME\CW-arc
+codex plugin marketplace add $HOME\CW-arc
+codex plugin add chatwork-archive-completion@hiroto
+```
+
+1行ずつ実行したい場合は、次の手順で進めてください。
+
+このリポジトリをcloneします。
+
+Mac / Linux:
+
+```bash
+git clone https://github.com/takeuchi23-jpg/CW-arc.git ~/CW-arc
+```
+
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/takeuchi23-jpg/CW-arc.git $HOME\CW-arc
 ```
 
 CodexにこのPluginマーケットプレイスを登録します。
 
+Mac / Linux:
+
 ```bash
-codex plugin marketplace add ~/codex-plugins-chatwork-archive-completion
+codex plugin marketplace add ~/CW-arc
+```
+
+Windows PowerShell:
+
+```powershell
+codex plugin marketplace add $HOME\CW-arc
 ```
 
 Pluginを追加します。
 
-```bash
+```sh
 codex plugin add chatwork-archive-completion@hiroto
 ```
 
@@ -38,8 +95,18 @@ $chatwork-archive-completion
 
 配布元がGitHubに変更をpushしたあと、使う側はclone済みのフォルダでpullします。
 
+Mac / Linux:
+
 ```bash
-cd ~/codex-plugins-chatwork-archive-completion
+cd ~/CW-arc
+git pull
+codex plugin add chatwork-archive-completion@hiroto
+```
+
+Windows PowerShell:
+
+```powershell
+cd $HOME\CW-arc
 git pull
 codex plugin add chatwork-archive-completion@hiroto
 ```
